@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    // Lang options
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "scripthost", "es2020"],
+    "moduleResolution": "node16",
+    "jsx": "react-jsx",
+    "types": ["vite/client", "vitest/globals"],
+    "importsNotUsedAsValues": "remove",
+    // Safety options
+    "strict": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    // Output options
+    "sourceMap": true,
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "downlevelIteration": true,
+    "declaration": false,
+    "rootDir": ".",
+    "outDir": "dist"
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["**/*.ts", "**/*.tsx"]
+}
